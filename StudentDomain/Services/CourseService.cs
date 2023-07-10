@@ -49,6 +49,7 @@ namespace StudentDomain.Services
                     res.Duration = course.Duration;
                     res.Fees = course.Fees;
                     res.ManageId = course.ManagementId.Value;
+                    res.ManageName = course.Management.ManageName;
               
 
                     list.Add(res);
@@ -69,7 +70,7 @@ namespace StudentDomain.Services
                 foreach (var c in course)
                 {
                     Course res = new Course();
-                    res.Id = c.Id;
+                    res.Id= c.Id;
                     res.Name = c.Name;
                     list.Add(res);
                 }

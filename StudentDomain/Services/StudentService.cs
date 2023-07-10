@@ -19,16 +19,19 @@ namespace StudentDomain.Services
         public async Task<Student> AddStudent(StudentsResonse stuResponseObj)
         {
             //throw new NotImplementedException();
-            Student student = new Student();
-            student.Id = stuResponseObj.Id;
-            student.Number = stuResponseObj.Number;
-            student.FirstName = stuResponseObj.FirstName;
-            student.LastName = stuResponseObj.LastName;
-            student.Email = stuResponseObj.Email;
-            student.Dob = stuResponseObj.Dob;
-            student.Phone = stuResponseObj.Phone;
+           
+                Student student = new Student();
+                student.Id = stuResponseObj.Id;
+                student.Number = stuResponseObj.Number;
+                student.FirstName = stuResponseObj.FirstName;
+                student.LastName = stuResponseObj.LastName;
+                student.Email = stuResponseObj.Email;
+                student.Dob = stuResponseObj.Dob;
+                student.Phone = stuResponseObj.Phone;
 
-            return await _repository.Add(student);
+                return await _repository.Add(student);
+            
+            
         }
 
         public async void DeleteStudent(int id)
@@ -57,6 +60,9 @@ namespace StudentDomain.Services
                     res.Email = user.Email;
                     res.Dob = user.Dob;
                     res.Phone = user.Phone;
+                    res.ManageId = user.ManagementId;
+                    res.ManageName = user.Management.ManageName;
+
 
                     list.Add(res);
                 }

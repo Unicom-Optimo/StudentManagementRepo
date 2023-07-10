@@ -39,6 +39,7 @@ namespace DataAccess.EFCore.Repository
             catch (Exception e)
             {
                 throw;
+                
 
             }
 
