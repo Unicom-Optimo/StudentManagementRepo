@@ -12,5 +12,7 @@ namespace DataAccess.EFCore
         public DbSet<Course> Course { get; set; }
         public DbSet<Management> Managements { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
     }
 }

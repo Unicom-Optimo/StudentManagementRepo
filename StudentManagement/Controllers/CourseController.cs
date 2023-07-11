@@ -6,7 +6,7 @@ using StudentDomain.Interfaces;
 namespace StudentManagement.Controllers
 {
     [Route("api/[controller]")]
-    //[ApiController]
+    [ApiController]
     public class CourseController : ControllerBase
     {
         public readonly ICourseService _courseService;

@@ -7,7 +7,7 @@ namespace StudentManagement.Controllers
 {
 
     [Route("api/[controller]")]
-    //[ApiController]
+    [ApiController]
     public class StudentManagementController : ControllerBase
     {
         public readonly IStudentService _studentService;
@@ -40,21 +40,21 @@ namespace StudentManagement.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public async Task<Student> GetStudentById([FromBody] int id)
+        public async Task<Student> GetStudentById([FromRoute] int id)
         {
             return _studentService.GetStudentById(id);
         }
 
         [HttpPut]
         [Route("{id}")]
-        public void Update([FromBody] int id, StudentsResonse updateStudentRequest)
+        public void Update([FromRoute] int id, StudentsResonse updateStudentRequest)
         {
             _studentService.UpdateStudent(id, updateStudentRequest);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public async void DeleterRequest([FromBody] int id)
+        public async void DeleterRequest([FromRoute] int id)
         {
             _studentService.DeleteStudent(id);
         }

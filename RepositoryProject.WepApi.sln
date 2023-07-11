@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagement", "StudentManagement\StudentManagement.csproj", "{34ED3CE8-1FF8-4B95-BCD0-1B0B23B39050}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentManagement", "StudentManagement\StudentManagement.csproj", "{34ED3CE8-1FF8-4B95-BCD0-1B0B23B39050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentDomain", "StudentDomain\StudentDomain.csproj", "{7AB1FA6E-380A-4693-B22D-8E03FB12FFDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentDomain", "StudentDomain\StudentDomain.csproj", "{7AB1FA6E-380A-4693-B22D-8E03FB12FFDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.EFCore", "DataAccess.EFCore\DataAccess.EFCore.csproj", "{BAAC4C56-0F8B-4A49-BA4D-A437398F1FF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess.EFCore", "DataAccess.EFCore\DataAccess.EFCore.csproj", "{BAAC4C56-0F8B-4A49-BA4D-A437398F1FF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

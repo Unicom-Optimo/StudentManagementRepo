@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "paVrKmPaN0Y7Uz2fQj0NGAxc5Yu8up+29Q3rUJCZl0w=",
+  "Source": "DataAccess.EFCore",
+  "BasePath": "_content/DataAccess.EFCore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
